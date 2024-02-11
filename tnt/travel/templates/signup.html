@@ -1,0 +1,48 @@
+<html>
+<head >
+<body style= "background: url(https://img1.goodfon.com/wallpaper/nbig/3/ef/samolet-airplane-passazhirskiy.jpg);background-size: 100% 100%;">
+<style>
+table{font-family:Calibri; color:"#FFFFFF"; width:8%;}
+hr{border-top :1px solid #000000;
+color:#000000;
+}
+</style>
+<title> TROUVAILLE </title> </head>
+<body> <h1 <font face= "Gabriola"><font size= "+5"> <CENTER> TROUVAILLE </CENTER> </font> </h1>
+<h3 font face="Calibri"><i><center>'A chance to encounter with something wonderful'</center></i> </font></h3>
+<br>
+<h3  <font color= "#000000">  <font face= "Copperplate"> <font size= "+3"> <CENTER>REGISTER NOW</CENTER> </font> </h3>
+<br>
+<br>
+<hr>
+<hr>
+<hr>
+<hr>
+<br>
+<form  action="../sign" method="post">
+        {% csrf_token %}
+        <center>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up</h2>
+		  <div class="input-field col s12">
+		  <br>
+		  <b><label>&nbsp;&nbsp;&nbsp;Name &nbsp;&nbsp;</label></b>
+		  <input type="text" name="username">
+		 </div>
+		  <br>
+        <div class="row">
+          <div class="input-field col s12">
+           <b><label>&nbsp;&nbsp;&nbsp;Email &nbsp;&nbsp;</label></b>
+			<input name="email" type="text">
+            <span class="helper-text" data-error="Incorrect email format" data-success=""></span>
+        </div>
+		  <br>
+          <div>
+            <b><label>Password</label></b>
+			<input name="password" type="text">
+            </div>
+		  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit">
+          </center>
+</form>
+</body>
+</html>

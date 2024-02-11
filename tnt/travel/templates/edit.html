@@ -1,0 +1,11 @@
+<html>
+<body>
+<form method="post" action="../edcode/{{ b.id }}">
+{% csrf_token %}
+<input type="text" name="username" value="{{ b.username }}">
+<input type="text" name="email" value="{{ b.email }}">
+<input type="text" name="password" value="{{ b.password }}">
+<input type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head >
+<body style= "background: url(https://images5.alphacoders.com/684/684904.jpg);background-size: 100% 100%;">
+<style>
+table{font-family:Calibri; color:"#FFFFFF"; width:8%;}
+hr{border-top :1px solid #000000;
+color:#000000;
+}
+</style>
+<title> TROUVAILLE </title> </head>
+<body> <h1 <font face= "Gabriola"><font size= "+5"> <CENTER> TROUVAILLE </CENTER> </font> </h1>
+<h3 font face="Calibri"><i><center>'A chance to encounter with something wonderful'</center></i> </font></h3>
+<br>
+<h3  <font color= "#000000">  <font face= "Copperplate"> <font size= "+3"> <CENTER>Buy your Package</CENTER> </font> </h3>
+<br>
+<br>
+<hr>
+<hr>
+<hr>
+<hr>
+<br>
+<h4  <font color= "#000000">  <font face= "Copperplate"> <font size= "+3"> 
+<form alt="buy" method="post">
+{% csrf_token %}
+<center>
+<h6>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="username"></h6>
+<h6>Email Address : <input type="text" name="email"></h6>
+<h6>Phone Number : <input type="text" name="email"></h6>
+<select id="item1" name="Item 1">
+<OPTION VALUE="0"> Select Package Name...</OPTION>
+<OPTION VALUE="1"> Enchanting Munnar </OPTION>
+<OPTION VALUE="2"> Stupendous Munnar Alleppey Houseboat </OPTION>
+<OPTION VALUE="3"> Heritage of Agra & Jaipur </OPTION>
+<OPTION VALUE="4"> The Grand Golden Triangle & Ranthambore </OPTION>
+<OPTION VALUE="5"> Gulmarg Standard </OPTION>
+<OPTION VALUE="6"> Gulmarg Leisure - Deluxe</OPTION>
+<OPTION VALUE="7"> Hyatt Deluxe Jumeirah </OPTION>
+<OPTION VALUE="8"> Wyndham Deluxe Jumeirah</OPTION>
+<OPTION VALUE="9"> Paris La Tour </OPTION>
+<OPTION VALUE="10"> Venice La Tour </OPTION>
+<OPTION VALUE="11"> Oxford MMT Special </OPTION>
+<OPTION VALUE="12"> Copthorne King's MMT Special</OPTION>
+<OPTION VALUE="13"> </OPTION>
+</select><br>
+<br>
+<select id="item2" name="Item 2">
+<OPTION VALUE="0"> Select Payment Option...</OPTION>
+<OPTION VALUE="0"> Cash </OPTION>
+<OPTION VALUE="0"> Credit Card </OPTION>
+<OPTION VALUE="0"> Debit Card </OPTION>
+<OPTION VALUE="0"> Net Banking </OPTION>
+</select>
+<br><br>
+<button onclick="message()">Find your Package's Price</button><br><br>
+<button onclick="message()">Pay Now</button>
+</center>
+
+
+<SCRIPT>
+function between(x, min, max) {
+  return x >= min && x <= max;
+}
+
+function message() {
+
+var s = document.getElementById('item1');
+var k = document.getElementById('item2');
+
+
+if (s.value == 0 ) {
+    alert("Please select an option!")
+}
+else if (s.value==0) {
+    alert("Sorry We Are Closed Due To COVID-19 Pandemic. Please Try Again Later")
+}
+else if (between(s.value, 1, 1)) {
+    alert("Rs - 12999")
+}
+else if (between(s.value, 2, 2)) {
+    alert("Rs - 14999")
+}
+else if (between(s.value, 3, 3)) {
+    alert("Rs - 12999")
+}
+else if (between(s.value, 4, 4)) {
+    alert("Rs - 14999")
+}
+else if (between(s.value, 5, 5)) {
+    alert("Rs - 12999")
+}
+else if (between(s.value, 6, 6)) {
+    alert("Rs - 15999")
+}
+else if (between(s.value, 7, 7)) {
+    alert("Rs - 87999")
+}
+else if (between(s.value, 8, 8)) {
+    alert("Rs - 89999")
+}
+else if (between(s.value, 9, 9)) {
+    alert("Rs - 97999")
+}
+else if (between(s.value, 10, 10)) {
+    alert("Rs - 89999")
+}
+else if (between(s.value, 11, 11)) {
+    alert("Rs - 67999")
+}
+else if (between(s.value, 12, 12)) {
+    alert("Rs - 77999")
+}
+if (k.value==0) {
+    alert("Sorry We Are Closed Due To COVID-19 Pandemic. Please Try Again Later")
+}
+}
+</SCRIPT>
+</form>
+</head>
+</html>
